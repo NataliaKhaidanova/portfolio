@@ -118,6 +118,12 @@ a:hover {
     }
 }
 
+/* UTILITY */
+.bottom-border {
+    border-bottom: 1px solid var(--text2);
+}
+
+
 /* HEADER */
 .header {
     margin-top: 20px;
@@ -163,7 +169,6 @@ a:hover {
 
 .hero_wrapper {
     padding-bottom: 80px;
-    border-bottom: 1px solid var(--text2);
 }
 
 .hero_text {
@@ -217,4 +222,41 @@ h1 > span {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+/* SKILLS */
+
+.skills {
+    position: relative;
+}
+
+.skills_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-block: 40px; /* block is top and bottom, while inline is left and right */
+}
+
+.skills_item {
+    text-align: center; 
+}
+
+.skills_title {
+    font-size: 2rem;
+    font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
+    line-height: 1.17;
+    margin-bottom: 2px;
+}
+
+.skills_description {
+    margin-top: 0;
+}
+
+@media (min-width: 37.5em) {
+    .skills_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 52px 24px;
+    }
+    .skills_item {
+        text-align: left;
+    }
 }
