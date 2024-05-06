@@ -260,3 +260,41 @@ h1 > span {
         text-align: left;
     }
 }
+
+
+
+
+.skills_container {
+    width: 40%; 
+    border: 2px solid var(--accent);
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .skill_bar {
+    padding-top: 4px; 
+    padding-bottom: 4px;
+    background: var(--accent);
+  }
+
+  .python {
+    width: 90%;
+  }
+
+  .sql { 
+    width: 60%;
+  }
+
+  .html {
+    width: 60%;
+  }
+
+  .css { 
+    width: 30%;
+  }
+
+  @media (min-width: 37.5em) {
+    .skills_container {
+        width: 11rem; 
+    }
+}
