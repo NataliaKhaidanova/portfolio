@@ -233,7 +233,8 @@ h1 > span {
 .skills_wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    padding-block: 40px; /* block is top and bottom, while inline is left and right */
+    padding-top: 40px;
+    padding-bottom: 65px;
 }
 
 .skills_item {
@@ -245,6 +246,7 @@ h1 > span {
     font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
     line-height: 1.17;
     margin-bottom: 2px;
+    margin-top: 25px;
 }
 
 .skills_description {
