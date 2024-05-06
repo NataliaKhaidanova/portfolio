@@ -42,10 +42,12 @@ h1, h2, h3 {
     line-height: 1;
 }
 
-h1 {
+.header-xl {
     font-size: 2.5rem;
     font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
     margin-bottom: 24px;
+    /* letter-spacing: -0.028em;
+    line-height: 1.1; */
 }
 
 @media (min-width: 600px){
@@ -299,4 +301,50 @@ h1 > span {
     .skills_container {
         width: 11rem; 
     }
+}
+
+/* CONTACT */
+
+.contact {
+
+}
+
+.contact_wrapper {
+
+}
+
+.contact_text {
+    text-align: center;
+}
+
+.contact_form {
+
+}
+
+.contact_control {
+
+}
+
+.contact_control input, 
+.contact_control textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--text1);
+    background: transparent;
+}
+
+.contact_control > *::placeholder {
+    color: var(--text1);
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.contact_control input {
+    
+}
+
+.contact_control textarea {
+    
 }
