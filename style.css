@@ -209,7 +209,7 @@ h1 > span {
 }
 
 @media (min-width: 62.5em) {
-    .hero_headline > br {
+    .break_1 {
         display: none;
     }
 }
