@@ -2,7 +2,7 @@
 
 /* set css custom properties */
 :root {
-    --bg-body: rgb(20, 20, 20);
+    --bg-body: hsl(0, 0%, 8%);
     --bg-contact: hsl(0, 0%, 14%);
     --accent: hsl(41, 78%, 51%); 
     --text1: hsl(0, 0%, 100%);
@@ -28,9 +28,11 @@ html {
     box-sizing: inherit;
 }
 
+body, input, textarea, button {
+    font-family: "Space Grotesk", sans-serif;
+}
 body {
     margin: 0;
-    font-family: "Space Grotesk", sans-serif;
     background-color: var(--bg-body);
     color: var(--text1);
     font-size: var(--fs-18);
@@ -71,11 +73,11 @@ p {
 }
 
 /* TRANSITIONS */
-a {
+a, button {
     transition: color var(--transition);
 }
 
-a.underline {
+a.underline, button {
     display: inline-block;
     font-size: 1rem;
     line-height: 1.625rem;
@@ -91,7 +93,7 @@ a.underline {
     padding-bottom: 10px;
 }
 
-a:hover {
+a:hover, button:hover {
     color: var(--accent);
 }
 
@@ -328,9 +330,14 @@ h1 > span {
 .contact_control input, 
 .contact_control textarea {
     width: 100%;
+    padding-block: 16px;
+    padding-inline: 24px;
     border: none;
     border-bottom: 1px solid var(--text1);
     background: transparent;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: var(--text1)
 }
 
 .contact_control > *::placeholder {
@@ -342,9 +349,49 @@ h1 > span {
 }
 
 .contact_control input {
-    
+    margin-block-end: 16px;
 }
 
 .contact_control textarea {
-    
+    margin-block-end: 32px;
+}
+
+.contact_control.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact_control button {
+    background-color: transparent;
+    border: none;
+}
+
+/* input validation */
+textarea, input {
+    outline: none; 
+}
+
+.contact_control input:focus-visible, 
+.contact_control textarea:focus-visible {
+    border-bottom-color: var(--accent);
+}
+
+.contact_control input:focus:invalid, 
+.contact_control textarea:focus:invalid {
+    border-bottom-color: var(--invalid);
+}
+
+form:invalid button {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.contact_invalid-icon {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contact_control input:focus:invalid ~ .contact_invalid-icon {
+    display: inline-block;
 }
