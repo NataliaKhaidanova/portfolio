@@ -311,7 +311,7 @@ width: 30%;
 }
 
 .experience_headline {
-    margin-block: 0 40px;
+    margin-block: 0 65px;
     text-align: center;
 }
 
@@ -321,7 +321,7 @@ width: 30%;
 
 .experience_item {
     display: grid;
-    grid-template-columns: 20% 20% 40%;
+    grid-template-columns: 35% 20% 40%;
     justify-content: center;
 }
 
@@ -333,6 +333,7 @@ width: 30%;
 
 }
 
+
 .experience_column_two {
     margin-right: 28px;
     text-align: right;
@@ -340,8 +341,13 @@ width: 30%;
 }
 
 .experience_date {
-    text-align: right;
+    text-align: center;
+    font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
     line-height: 1;
+}
+
+.experience_date_desktop {
+    display: none;
 }
 
 .experience_circle {
@@ -391,7 +397,21 @@ width: 30%;
     }
 
     .experience_item {
-        grid-template-columns: 20% 5% 40%;
+        grid-template-columns: 35% 5% 40%;
+        justify-content: initial;
+    }
+    .experience_date_mobile {
+        display: none;
+    }
+
+    .experience_date_desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .experience_item {
+        grid-template-columns: 25% 5% 40%;
         justify-content: initial;
     }
 }
