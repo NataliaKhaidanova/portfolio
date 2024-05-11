@@ -41,7 +41,7 @@ body {
     line-height: 1.56; /* 28px/18px */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     line-height: 1;
 }
 
@@ -268,41 +268,131 @@ h1 > span {
     }
 }
 
-
-
-
 .skills_container {
     width: 40%; 
     border: 2px solid var(--accent);
     display: inline-block;
     border-radius: 5px;
-  }
+    box-shadow: 0 0 10px var(--accent);
+}
   
-  .skill_bar {
-    padding-top: 4px; 
-    padding-bottom: 4px;
-    background: var(--accent);
-  }
+.skill_bar {
+padding-top: 4px; 
+padding-bottom: 4px;
+background: var(--accent);
+}
 
-  .python {
-    width: 90%;
-  }
+.python {
+width: 90%;
+}
 
-  .sql { 
-    width: 60%;
-  }
+.sql { 
+width: 60%;
+}
 
-  .html {
-    width: 60%;
-  }
+.html {
+width: 60%;
+}
 
-  .css { 
-    width: 30%;
-  }
+.css { 
+width: 30%;
+}
 
-  @media (min-width: 37.5em) {
+@media (min-width: 37.5em) {
     .skills_container {
         width: 11rem; 
+    }
+}
+
+/* EXPERIENCE */
+
+.experience {
+
+}
+
+.experience_headline {
+    margin-block: 0 40px;
+    text-align: center;
+}
+
+.experience_wrapper {
+
+}
+
+.experience_item {
+    display: grid;
+    grid-template-columns: 20% 20% 40%;
+    justify-content: center;
+}
+
+.experience_item > div > h3 {
+    margin-block: 0 7px;
+}
+
+.experience_column {
+
+}
+
+.experience_column_two {
+    margin-right: 28px;
+    text-align: right;
+    position: relative;
+}
+
+.experience_date {
+    text-align: right;
+    line-height: 1;
+}
+
+.experience_circle {
+    position: absolute;
+    display: inline-block;
+    margin-top: 4px;
+    padding-block: 4px;
+    padding-inline: 4px;
+    border-radius: 6px;
+    border: 2px solid var(--accent);
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+/* .experience_timeline {
+    margin-right: 5px;
+    border-right: 2px solid var(--text2); 
+} */
+
+.experience_timeline_middle {
+    padding-block: 70px;
+}
+
+.experience_timeline_last {
+    padding-block: 59.5px;
+}
+
+.position {
+    color: var(--accent);
+}
+
+.company {
+    margin-top: 0;
+}
+
+.experience_description {
+
+}
+
+@media (min-width: 37.5em) {
+    .experience_headline {
+        text-align: left; 
+    }
+
+    .experience_date {
+        text-align: left;
+    }
+
+    .experience_item {
+        grid-template-columns: 20% 5% 40%;
+        justify-content: initial;
     }
 }
 
