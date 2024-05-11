@@ -335,9 +335,11 @@ width: 30%;
 
 
 .experience_column_two {
+    padding-right: 4.7px;
     margin-right: 28px;
     text-align: right;
     position: relative;
+    border-right: 2px solid var(--accent);
 }
 
 .experience_date {
@@ -397,7 +399,7 @@ width: 30%;
     }
 
     .experience_item {
-        grid-template-columns: 35% 5% 40%;
+        grid-template-columns: 35% 10% 40%;
         justify-content: initial;
     }
     .experience_date_mobile {
