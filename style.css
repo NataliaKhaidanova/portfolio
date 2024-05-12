@@ -65,7 +65,7 @@ h1, h2, h3, h4 {
     }
 }
 
-p {
+p, li {
     font-size: 1rem;
     font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
     line-height: 1.5;
@@ -307,7 +307,7 @@ width: 30%;
 /* EXPERIENCE */
 
 .experience {
-
+    margin-bottom: 45px;
 }
 
 .experience_headline {
@@ -339,7 +339,7 @@ width: 30%;
     margin-right: 28px;
     text-align: right;
     position: relative;
-    border-right: 2px solid var(--accent);
+    /* border-right: 2px solid var(--accent); */
 }
 
 .experience_date {
@@ -364,10 +364,16 @@ width: 30%;
     box-shadow: 0 0 10px var(--accent);
 }
 
-/* .experience_timeline {
-    margin-right: 5px;
-    border-right: 2px solid var(--text2); 
-} */
+.experience_timeline {
+    position: absolute;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    height: 75%;
+    width: 4px;
+    translate: 90%;
+}
 
 .experience_timeline_middle {
     padding-block: 70px;
@@ -389,6 +395,11 @@ width: 30%;
 
 }
 
+ul {
+    padding-left: 1rem;
+    list-style-type: square;
+}
+
 @media (min-width: 37.5em) {
     .experience_headline {
         text-align: left; 
@@ -399,7 +410,7 @@ width: 30%;
     }
 
     .experience_item {
-        grid-template-columns: 35% 10% 40%;
+        grid-template-columns: 35% 10% 55%;
         justify-content: initial;
     }
     .experience_date_mobile {
@@ -413,7 +424,7 @@ width: 30%;
 
 @media (min-width: 62.5em) {
     .experience_item {
-        grid-template-columns: 25% 5% 40%;
+        grid-template-columns: 25% 5% 70%;
         justify-content: initial;
     }
 }
