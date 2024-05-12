@@ -419,6 +419,20 @@ ul {
     }
 }
 
+/* EDUCATION */
+.education_subsection {
+    margin-bottom: 18px;
+}
+
+.course {
+    margin-block: 0;
+}
+
+.thesis {
+    margin-bottom: 0;
+}
+
+
 /* CONTACT */
 
 .contact {
