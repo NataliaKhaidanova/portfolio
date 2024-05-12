@@ -295,7 +295,7 @@ width: 60%;
 }
 
 .css { 
-width: 30%;
+width: 45%;
 }
 
 @media (min-width: 37.5em) {
@@ -305,7 +305,6 @@ width: 30%;
 }
 
 /* EXPERIENCE */
-
 .experience {
     margin-bottom: 45px;
 }
@@ -315,41 +314,38 @@ width: 30%;
     text-align: center;
 }
 
-.experience_wrapper {
-
-}
-
 .experience_item {
     display: grid;
-    grid-template-columns: 35% 20% 40%;
+    grid-template-columns: 10% 80%;
     justify-content: center;
 }
 
-.experience_item > div > h3 {
+.experience_item > div > h3, h4, h5 {
     margin-block: 0 7px;
 }
 
-.experience_column {
-
+.experience_item > div > h4, h5 {
+    margin-block: 0 7px;
+    line-height: 1.5;
 }
 
+.experience_date_outer {
+    line-height: 1;
+}
+
+.experience_date_inner {
+    color: var(--text2);
+}
+
+.experience_column_one {
+    display: none;
+}
 
 .experience_column_two {
     padding-right: 4.7px;
     margin-right: 28px;
     text-align: right;
     position: relative;
-    /* border-right: 2px solid var(--accent); */
-}
-
-.experience_date {
-    text-align: center;
-    font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
-    line-height: 1;
-}
-
-.experience_date_desktop {
-    display: none;
 }
 
 .experience_circle {
@@ -370,29 +366,13 @@ width: 30%;
     margin-top: 10px;
     background-color: var(--accent);
     box-shadow: 0 0 10px var(--accent);
-    height: 75%;
+    height: 85%;
     width: 4px;
     translate: 90%;
 }
 
-.experience_timeline_middle {
-    padding-block: 70px;
-}
-
-.experience_timeline_last {
-    padding-block: 59.5px;
-}
-
 .position {
     color: var(--accent);
-}
-
-.company {
-    margin-top: 0;
-}
-
-.experience_description {
-
 }
 
 ul {
@@ -405,27 +385,31 @@ ul {
         text-align: left; 
     }
 
-    .experience_date {
-        text-align: left;
-    }
-
     .experience_item {
         grid-template-columns: 35% 10% 55%;
-        justify-content: initial;
     }
-    .experience_date_mobile {
+
+    .experience_column_one {
+        display: block;
+    }
+
+    .experience_date_inner {
         display: none;
     }
 
-    .experience_date_desktop {
-        display: block;
+    .experience_timeline {
+        height: 83%;
     }
+    
 }
 
 @media (min-width: 62.5em) {
     .experience_item {
         grid-template-columns: 25% 5% 70%;
-        justify-content: initial;
+    }
+
+    .experience_timeline {
+        height: 78%;
     }
 }
 
