@@ -4,7 +4,8 @@
 :root {
     --bg-body: hsl(0, 0%, 8%);
     --bg-contact: hsl(0, 0%, 14%);
-    --accent: hsl(41, 78%, 51%); 
+    /* --accent: hsl(41, 78%, 51%);  */
+    --accent: hsl(143.4, 78.3%, 51.2%);
     --text1: hsl(0, 0%, 100%);
     --text2: hsl(0, 0%, 85%);
     --invalid: rgb(255, 111, 92);
@@ -560,17 +561,24 @@ form:invalid button {
 
 footer {
     background-color: var(--bg-contact);
-    padding-block: 40px 60px;
+    padding-block: 40px 10px;
 }
 
 @media (max-width: 37.5em) {
     footer {
-        padding-block: 30px 40px;
+        padding-block: 30px 10px
     }
 }
 
 @media (max-width: 62.5em) {
     footer {
-        padding-block: 47px 92px;
+        padding-block: 47px 10px;
     }
+}
+
+
+.delevoped_by {
+    text-align: center;
+    color: var(--accent);
+
 }
