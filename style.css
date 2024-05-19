@@ -301,6 +301,10 @@ width: 60%;
 width: 45%;
 }
 
+.git {
+    width: 55%;
+}
+
 @media (min-width: 37.5em) {
     .skills_container {
         width: 11rem; 
