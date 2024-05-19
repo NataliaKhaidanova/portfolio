@@ -8,9 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script>  -->
     <title>Developer Portfolio</title>
 </head>
 <body>
+    <!-- <div class="wrapper">
+        <div class="tabs-container">
+            <ul aria-labelledby="tabs-title">
+                <li><a id="tab-1" href="#coding-skills">Coding Skills</a></li>
+                <li><a id="tab-2" href="#professional-skills">Professional Skills</a></li>
+            </ul>
+            <div class="tabs__panels flow">
+                <div id="coding-skills" aria-labelledby="tab-1">
+                    <p>Some text</p>
+                </div>
+                <div id="professional-skills" aria-labelledby="tab-2">
+                    <p>Some other text</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
     <header class="header">
         <h2 class="visually_hidden">Header</h2>
         <div class="wrapper">
@@ -74,37 +92,111 @@
             </div>
         </section>
 
-        <section class="skills">
-            <h2 class="visually_hidden">Skills</h2>
-            <div class="wrapper skills_wrapper">
-                <div class="skills_item">
-                    <h3 class="skills_title">Python</h3>
-                    <div class="skills_container">
-                        <div class="skill_bar python"></div>
+        <div class="tabs_container">
+            <ul class="wrapper tabs_wrapper">
+                <!-- <li class="tab"><a href="#coding_skills">Coding Skills</a></li>
+                <li class="tab"><a href="#professional_skills">Professional Skills</a></li> -->
+                <a href="#coding_skills" class="tab tab_left">Code Skills</a>
+                <a href="#pro_skills" class="tab tab_right">Tech Skills</a>
+            </ul>
+        
+            <div class="tabs_panels">
+                <section id="coding_skills" class="skills">
+                    <h2 class="visually_hidden">Coding Skills</h2>
+                    <div class="wrapper skills_wrapper">
+                        <div class="skills_item">
+                            <h3 class="skills_title">Python</h3>
+                            <div class="skills_container">
+                                <div class="skill_bar python"></div>
+                            </div>   
+                        </div>
+                        <div class="skills_item">
+                            <h3 class="skills_title">SQL</h3>
+                            <div class="skills_container">
+                                <div class="skill_bar sql"></div>
+                            </div>
+                        </div>
+                        <div class="skills_item">
+                            <h3 class="skills_title">HTML</h3>
+                            <div class="skills_container">
+                                <div class="skill_bar html"></div>
+                            </div>
+                        </div>
+                        <div class="skills_item">
+                            <h3 class="skills_title">CSS</h3>
+                            <div class="skills_container">
+                                <div class="skill_bar css"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="skills_item">
-                    <h3 class="skills_title">SQL</h3>
-                    <div class="skills_container">
-                        <div class="skill_bar sql"></div>
+                </section>
+
+                <section id="pro_skills" class="pro_skills">
+                    <h2 class="visually_hidden">Professional Skills</h2>
+                    <div class="wrapper pro_skills_wrapper">
+                        <div class="pro_skills_item">
+                            <h3 class="pro_skills_title pro_skills_title_mobile">Web Scraping - 70%</h3>
+                            <div class="pro_skills_title_container title_container_web_scraping">
+                                <h3 class="pro_skills_title pro_skills_title_desktop">Web Scraping</h3>
+                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">70%</h3>
+                            </div>
+                            <div class="pro_skills_container web_scraping">
+                                <div class="skill_circle circle_0_1"></div>
+                                <div class="skill_circle circle_0_2"></div>
+                                <div class="skill_circle circle_0_3"></div>
+                                <div class="skill_circle circle_0_4"></div>
+                                <div class="skill_circle circle_0_5"></div>
+                                <div class="skill_circle circle_0_6"></div>
+                                <div class="skill_circle circle_0_7"></div>
+                                <div class="skill_circle circle_0_8"></div>
+                                <div class="skill_circle circle_0_9"></div>
+                                <div class="skill_circle circle_0_10"></div>
+                            </div>
+                        </div>
+        
+                        <div class="pro_skills_item">
+                            <h3 class="pro_skills_title pro_skills_title_mobile">Data Transformation - 60%</h3>
+                            <div class="pro_skills_title_container title_container_data_transformation">
+                                <h3 class="pro_skills_title pro_skills_title_desktop">Data Transformation</h3>
+                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">60%</h3>
+                            </div>
+                            <div class="pro_skills_container data_transformation">
+                                <div class="skill_circle circle_1_1"></div>
+                                <div class="skill_circle circle_1_2"></div>
+                                <div class="skill_circle circle_1_3"></div>
+                                <div class="skill_circle circle_1_4"></div>
+                                <div class="skill_circle circle_1_5"></div>
+                                <div class="skill_circle circle_1_6"></div>
+                                <div class="skill_circle circle_1_7"></div>
+                                <div class="skill_circle circle_1_8"></div>
+                                <div class="skill_circle circle_1_9"></div>
+                                <div class="skill_circle circle_1_10"></div>
+                            </div>
+                        </div>
+        
+                        <div class="pro_skills_item">
+                            <h3 class="pro_skills_title pro_skills_title_mobile">Database Management - 40%</h3>
+                            <div class="pro_skills_title_container title_container_db_management">
+                                <h3 class="pro_skills_title pro_skills_title_desktop">Database Management</h3>
+                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">40%</h3>
+                            </div>
+                            <div class="pro_skills_container db_management">
+                                <div class="skill_circle circle_2_1"></div>
+                                <div class="skill_circle circle_2_2"></div>
+                                <div class="skill_circle circle_2_3"></div>
+                                <div class="skill_circle circle_2_4"></div>
+                                <div class="skill_circle circle_2_5"></div>
+                                <div class="skill_circle circle_2_6"></div>
+                                <div class="skill_circle circle_2_7"></div>
+                                <div class="skill_circle circle_2_8"></div>
+                                <div class="skill_circle circle_2_9"></div>
+                                <div class="skill_circle circle_2_10"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="skills_item">
-                    <h3 class="skills_title">HTML</h3>
-                    <!-- <p class="skills_description">4 Years Experience</p> -->
-                    <div class="skills_container">
-                        <div class="skill_bar html"></div>
-                    </div>
-                </div>
-                <div class="skills_item">
-                    <h3 class="skills_title">CSS</h3>
-                    <!-- <p class="skills_description">4 Years Experience</p> -->
-                    <div class="skills_container">
-                        <div class="skill_bar css"></div>
-                    </div>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
 
         <section class="experience">
             <div class="wrapper experience_wrapper">
@@ -264,5 +356,6 @@
     </footer>
 
     <!-- Here will go some more text about myself. -->
+    <script src="script.js"></script>
 </body>
 </html>
