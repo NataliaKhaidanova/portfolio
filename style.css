@@ -680,7 +680,7 @@ footer {
     box-shadow: 0 0 10px var(--accent);
 }
 
-.nlp > .circle_5_1, .circle_5_2, .circle_5_3, .circle_5_4, .circle_5_5, .circle_5_6, .circle_5_7, .circle_5_8, .circle_5_9 {
+.nlp > .circle_5_1, .circle_5_2, .circle_5_3, .circle_5_4, .circle_5_5, .circle_5_6, .circle_5_7, .circle_5_8 {
     background-color: var(--accent);
     box-shadow: 0 0 10px var(--accent);
 }
