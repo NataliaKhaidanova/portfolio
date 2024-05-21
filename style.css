@@ -241,7 +241,7 @@ h1 > span {
 .skills_wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 65px;
 }
 
@@ -264,7 +264,7 @@ h1 > span {
 @media (min-width: 37.5em) {
     .skills_wrapper {
         grid-template-columns: repeat(2, 1fr);
-        gap: 52px 24px;
+        gap: 32px 24px;
     }
     .skills_item {
         text-align: left;
@@ -621,7 +621,7 @@ footer {
 .pro_skills_wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 65px;
 }
 
@@ -660,16 +660,47 @@ footer {
     box-shadow: 0 0 10px var(--accent);
 }
 
-.data_transformation > .circle_1_1, .circle_1_2, .circle_1_3, .circle_1_4, .circle_1_5, .circle_1_6 {
+.data_transformation > .circle_1_1, .circle_1_2, .circle_1_3, .circle_1_4, .circle_1_5, .circle_1_6, .circle_1_7 {
     background-color: var(--accent);
     box-shadow: 0 0 10px var(--accent);
 }
 
-.db_management > .circle_2_1, .circle_2_2, .circle_2_3, .circle_2_4 {
+.db_management > .circle_2_1, .circle_2_2, .circle_2_3, .circle_2_4, .circle_2_5 {
     background-color: var(--accent);
     box-shadow: 0 0 10px var(--accent);
 }
 
+.data_modeling > .circle_3_1, .circle_3_2, .circle_3_3, .circle_3_4, .circle_3_5, .circle_3_6 {
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.data_pipelines > .circle_4_1, .circle_4_2, .circle_4_3, .circle_4_4 {
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.nlp > .circle_5_1, .circle_5_2, .circle_5_3, .circle_5_4, .circle_5_5, .circle_5_6, .circle_5_7, .circle_5_8, .circle_5_9 {
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.frontend > .circle_6_1, .circle_6_2, .circle_6_3 {
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+
+@media (min-width: 62.5em) {
+    .pro_skills_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+    }
+
+    .pro_skills_item {
+        text-align: left;
+    }
+}
 
 @media (min-width: 37.5em) {
     .skill_circle {
@@ -699,15 +730,31 @@ footer {
     }
 
     .title_container_web_scraping {
-        gap: 153px;
+        gap: 151px;
     }
 
     .title_container_data_transformation {
-        gap: 83px;
+        gap: 84px;
     }
 
     .title_container_db_management {
-        gap: 55px;
+        gap: 56px;
+    }
+
+    .title_container_data_modeling {
+        gap: 143px;
+    }
+
+    .title_container_data_pipelines {
+        gap: 146px;
+    }
+
+    .title_container_nlp {
+        gap: 84px;
+    }
+
+    .title_container_frontend {
+        gap: 50px;
     }
 }
 
