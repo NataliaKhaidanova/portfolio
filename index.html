@@ -1,449 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script>  -->
-    <title>Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Developer Portfolio</title>
 </head>
+
 <body>
-    <!-- <div class="wrapper">
-        <div class="tabs-container">
-            <ul aria-labelledby="tabs-title">
-                <li><a id="tab-1" href="#coding-skills">Coding Skills</a></li>
-                <li><a id="tab-2" href="#professional-skills">Professional Skills</a></li>
+  <header class="header">
+    <h2 class="visually_hidden">Header</h2>
+    <div class="wrapper">
+      <nav class="header_nav">
+        <h2 class="visually_hidden">Navigation</h2>
+        <a href="/" class="header_home">
+          natalia_khaidanova
+          <span class="visually_hidden">(to home page)</span>
+        </a>
+        <a href="https://github.com/NataliaKhaidanova" target="_blank" class="header_social">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" aria-labelledby="socialGitHub" role="img">
+            <title id="socialGitHub">GitHub</title>
+            <path fill="#FFF"
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/natalia-khaidanova-267381282/" target="_blank" class="header_social">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" aria-labelledby="socialLinkedIn" role="img">
+            <title id="socialLinkedIn">LinkedIn</title>
+            <path fill="#FFF"
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrapper hero_wrapper bottom-border">
+        <picture>
+          <source media="(min-width: 62.5em)" srcset="assets/picture.png">
+          <source media="(min-width: 37.5em)" srcset="assets/picture.png">
+        </picture>
+        <div class="hero_text">
+          <h1 class="hero_headline header-xl">
+            Nice to<br class="break_1" />
+            meet you! I'm <br class="break_2" /><span>Natalia Khaidanova</span></h1>
+          <p class="hero_description">I'm a Data Engineer with experience in Natural Language Processing (NLP) and
+            Front-End Development.</p>
+          <p class="hero_description">Based in Amsterdam, the Netherlands.</p>
+          <a href="#contact" class="hero_contact underline">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="tabs_container">
+      <ul class="wrapper tabs_wrapper">
+        <a href="#coding_skills" class="tab tab_left">Code Skills</a>
+        <a href="#pro_skills" class="tab tab_right">Tech Skills</a>
+      </ul>
+
+      <div class="tabs_panels">
+        <section id="coding_skills" class="skills">
+          <h2 class="visually_hidden">Coding Skills</h2>
+          <div class="wrapper skills_wrapper">
+            <div class="skills_item">
+              <h3 class="skills_title">Python</h3>
+              <div class="skills_container">
+                <div class="skill_bar python"></div>
+              </div>
+            </div>
+            <div class="skills_item">
+              <h3 class="skills_title">SQL</h3>
+              <div class="skills_container">
+                <div class="skill_bar sql"></div>
+              </div>
+            </div>
+            <div class="skills_item">
+              <h3 class="skills_title">HTML</h3>
+              <div class="skills_container">
+                <div class="skill_bar html"></div>
+              </div>
+            </div>
+            <div class="skills_item">
+              <h3 class="skills_title">CSS</h3>
+              <div class="skills_container">
+                <div class="skill_bar css"></div>
+              </div>
+            </div>
+            <div class="skills_item">
+              <h3 class="skills_title">Git</h3>
+              <div class="skills_container">
+                <div class="skill_bar git"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pro_skills" class="pro_skills">
+          <h2 class="visually_hidden">Professional Skills</h2>
+          <div class="wrapper pro_skills_wrapper">
+            <div class="pro_skills_item">
+              <h3 class="pro_skills_title pro_skills_title_mobile">Web Scraping - 70%</h3>
+              <div class="pro_skills_title_container title_container_web_scraping">
+                <h3 class="pro_skills_title pro_skills_title_desktop">Web Scraping</h3>
+                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">70%</h3>
+              </div>
+              <div class="pro_skills_container web_scraping">
+                <div class="skill_circle circle_0_1"></div>
+                <div class="skill_circle circle_0_2"></div>
+                <div class="skill_circle circle_0_3"></div>
+                <div class="skill_circle circle_0_4"></div>
+                <div class="skill_circle circle_0_5"></div>
+                <div class="skill_circle circle_0_6"></div>
+                <div class="skill_circle circle_0_7"></div>
+                <div class="skill_circle circle_0_8"></div>
+                <div class="skill_circle circle_0_9"></div>
+                <div class="skill_circle circle_0_10"></div>
+              </div>
+            </div>
+
+            <div class="pro_skills_item">
+              <h3 class="pro_skills_title pro_skills_title_mobile">Data Transformation - 70%</h3>
+              <div class="pro_skills_title_container title_container_data_transformation">
+                <h3 class="pro_skills_title pro_skills_title_desktop">Data Transformation</h3>
+                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">70%</h3>
+              </div>
+              <div class="pro_skills_container data_transformation">
+                <div class="skill_circle circle_1_1"></div>
+                <div class="skill_circle circle_1_2"></div>
+                <div class="skill_circle circle_1_3"></div>
+                <div class="skill_circle circle_1_4"></div>
+                <div class="skill_circle circle_1_5"></div>
+                <div class="skill_circle circle_1_6"></div>
+                <div class="skill_circle circle_1_7"></div>
+                <div class="skill_circle circle_1_8"></div>
+                <div class="skill_circle circle_1_9"></div>
+                <div class="skill_circle circle_1_10"></div>
+              </div>
+            </div>
+
+            <div class="pro_skills_item">
+              <h3 class="pro_skills_title pro_skills_title_mobile">Database Management - 50%</h3>
+              <div class="pro_skills_title_container title_container_db_management">
+                <h3 class="pro_skills_title pro_skills_title_desktop">Database Management</h3>
+                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">50%</h3>
+              </div>
+              <div class="pro_skills_container db_management">
+                <div class="skill_circle circle_2_1"></div>
+                <div class="skill_circle circle_2_2"></div>
+                <div class="skill_circle circle_2_3"></div>
+                <div class="skill_circle circle_2_4"></div>
+                <div class="skill_circle circle_2_5"></div>
+                <div class="skill_circle circle_2_6"></div>
+                <div class="skill_circle circle_2_7"></div>
+                <div class="skill_circle circle_2_8"></div>
+                <div class="skill_circle circle_2_9"></div>
+                <div class="skill_circle circle_2_10"></div>
+              </div>
+            </div>
+
+            <div class="pro_skills_item">
+              <h3 class="pro_skills_title pro_skills_title_mobile">Data Modeling - 60%</h3>
+              <div class="pro_skills_title_container title_container_data_modeling">
+                <h3 class="pro_skills_title pro_skills_title_desktop">Data Modeling</h3>
+                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">60%</h3>
+              </div>
+              <div class="pro_skills_container data_modeling">
+                <div class="skill_circle circle_3_1"></div>
+                <div class="skill_circle circle_3_2"></div>
+                <div class="skill_circle circle_3_3"></div>
+                <div class="skill_circle circle_3_4"></div>
+                <div class="skill_circle circle_3_5"></div>
+                <div class="skill_circle circle_3_6"></div>
+                <div class="skill_circle circle_3_7"></div>
+                <div class="skill_circle circle_3_8"></div>
+                <div class="skill_circle circle_3_9"></div>
+                <div class="skill_circle circle_3_10"></div>
+              </div>
+            </div>
+
+            <div class="pro_skills_item">
+              <h3 class="pro_skills_title pro_skills_title_mobile">Data Pipelines - 50%</h3>
+              <div class="pro_skills_title_container title_container_data_pipelines">
+                <h3 class="pro_skills_title pro_skills_title_desktop">Data Pipelines</h3>
+                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">50%</h3>
+              </div>
+              <div class="pro_skills_container data_pipelines">
+                <div class="skill_circle circle_4_1"></div>
+                <div class="skill_circle circle_4_2"></div>
+                <div class="skill_circle circle_4_3"></div>
+                <div class="skill_circle circle_4_4"></div>
+                <div class="skill_circle circle_4_5"></div>
+                <div class="skill_circle circle_4_6"></div>
+                <div class="skill_circle circle_4_7"></div>
+                <div class="skill_circle circle_4_8"></div>
+                <div class="skill_circle circle_4_9"></div>
+                <div class="skill_circle circle_4_10"></div>
+              </div>
+            </div>
+
+            <div class="pro_skills_item">
+              <h3 class="pro_skills_title pro_skills_title_mobile">Text Mining and NLP - 80%</h3>
+              <div class="pro_skills_title_container title_container_nlp">
+                <h3 class="pro_skills_title pro_skills_title_desktop">Text Mining and NLP</h3>
+                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">80%</h3>
+              </div>
+              <div class="pro_skills_container nlp">
+                <div class="skill_circle circle_5_1"></div>
+                <div class="skill_circle circle_5_2"></div>
+                <div class="skill_circle circle_5_3"></div>
+                <div class="skill_circle circle_5_4"></div>
+                <div class="skill_circle circle_5_5"></div>
+                <div class="skill_circle circle_5_6"></div>
+                <div class="skill_circle circle_5_7"></div>
+                <div class="skill_circle circle_5_8"></div>
+                <div class="skill_circle circle_5_9"></div>
+                <div class="skill_circle circle_5_10"></div>
+              </div>
+            </div>
+
+            <div class="pro_skills_item">
+              <h3 class="pro_skills_title pro_skills_title_mobile">Front-End Development - 30%</h3>
+              <div class="pro_skills_title_container title_container_frontend">
+                <h3 class="pro_skills_title pro_skills_title_desktop">Front-End Development</h3>
+                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">30%</h3>
+              </div>
+              <div class="pro_skills_container frontend">
+                <div class="skill_circle circle_6_1"></div>
+                <div class="skill_circle circle_6_2"></div>
+                <div class="skill_circle circle_6_3"></div>
+                <div class="skill_circle circle_6_4"></div>
+                <div class="skill_circle circle_6_5"></div>
+                <div class="skill_circle circle_6_6"></div>
+                <div class="skill_circle circle_6_7"></div>
+                <div class="skill_circle circle_6_8"></div>
+                <div class="skill_circle circle_6_9"></div>
+                <div class="skill_circle circle_6_10"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="experience">
+      <div class="wrapper experience_wrapper">
+        <h2 class="experience_headline header-xl">Experience</h2>
+        <div class="experience_item experience_item_top">
+          <div class="experience_column experience_column_one">
+            <div class="experience_date_outer">07/2024 - current</div>
+          </div>
+          <div class="experience_column experience_column_two">
+            <div class="experience_circle"></div>
+            <div class="experience_timeline"></div>
+          </div>
+          <div class="experience_column experience_column_three">
+            <h3 class="position">Junior Data Engineer</h3>
+            <h4 class="company">Cefetra Group - Rotterdam, Netherlands</h4>
+            <h5 class="experience_date_inner">07/2024 - current</h5>
+            <ul class="experience_description"></ul>
+          </div>
+        </div>
+        <div class="experience_item experience_item_bottom">
+          <div class="experience_column experience_column_one">
+            <div class="experience_date_outer">12/2023 - 07/2024</div>
+          </div>
+          <div class="experience_column experience_column_two">
+            <div class="experience_circle"></div>
+            <div class="experience_timeline"></div>
+          </div>
+          <div class="experience_column experience_column_three">
+            <h3 class="position">Assistant Data Engineer</h3>
+            <h4 class="company">Cefetra Group - Rotterdam, Netherlands</h4>
+            <h5 class="experience_date_inner">12/2023 - 07/2024</h5>
+            <ul class="experience_description">
+              <li>Made significant contributions to the end-to-end development of two high-impact data projects, driving
+                revenue growth for Cefetra Group through paid customer subscriptions.</li>
+              <li>Developed a neural language model with TensorFlow to extract relevant data from Reuters articles,
+                achieving an accuracy rate of 96%.</li>
+              <li>Built and maintained ETL data pipelines to ensure automated collection, processing, and storage of
+                data. Monitored and troubleshot pipeline issues to establish a smooth and reliable data flow.</li>
+              <li>Created and managed data models to represent the structure of collected data in relational databases
+                using PostgreSQL.</li>
+              <li class="last_list_item">Contributed to creating and maintaining comprehensive documentation for data
+                engineering processes and workflows.</li>
             </ul>
-            <div class="tabs__panels flow">
-                <div id="coding-skills" aria-labelledby="tab-1">
-                    <p>Some text</p>
-                </div>
-                <div id="professional-skills" aria-labelledby="tab-2">
-                    <p>Some other text</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </div> -->
-    
-    <header class="header">
-        <h2 class="visually_hidden">Header</h2>
-        <div class="wrapper">
-            <nav class="header_nav">
-                <h2 class="visually_hidden">Navigation</h2>
-                <!-- link to home page -->
-                <a href="/" class="header_home">
-                    natalia_khaidanova
-                    <span class="visually_hidden">(to home page)</span>
-                </a> 
-                <!-- GitHub -->
-                <a href="https://github.com/NataliaKhaidanova" target="_blank" class="header_social">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="25" 
-                        height="24" 
-                        aria-labelledby="socialGitHub" 
-                        role="img"
-                    >
-                        <title id="socialGitHub">GitHub</title>
-                        <path 
-                            fill="#FFF"
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                        />
-                    </svg>
-                </a>
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/natalia-khaidanova-267381282/" target="_blank" class="header_social">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="25" 
-                        height="24" 
-                        aria-labelledby="socialLinkedIn" 
-                        role="img"
-                    >
-                        <title id="socialLinkedIn">LinkedIn</title>
-                        <path 
-                            fill="#FFF"
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                        />
-                    </svg>
-                </a>
-            </nav>
-        </div>
-    </header>
-    <main id="main">
-        <section class="hero">
-            <div class="wrapper hero_wrapper bottom-border">
-                <picture>
-                    <source media="(min-width: 62.5em)" srcset="assets/picture.png">
-                    <source media="(min-width: 37.5em)" srcset="assets/picture.png">
-                </picture>
-                <div class="hero_text">
-                    <h1 class="hero_headline header-xl">
-                        Nice to<br class="break_1"/> 
-                        meet you! I'm <br class="break_2"/><span>Natalia Khaidanova</span></h1>
-                    <p class="hero_description">I'm a Data Engineer with experience in Natural Language Processing (NLP) and Front-End Development.</p>
-                    <p class="hero_description">Based in Amsterdam, the Netherlands.</p>
-                    <a href="#contact" class="hero_contact underline">Contact me</a>
-                </div>
-            </div>
-        </section>
+      </div>
+    </section>
 
-        <div class="tabs_container">
-            <ul class="wrapper tabs_wrapper">
-                <!-- <li class="tab"><a href="#coding_skills">Coding Skills</a></li>
-                <li class="tab"><a href="#professional_skills">Professional Skills</a></li> -->
-                <a href="#coding_skills" class="tab tab_left">Code Skills</a>
-                <a href="#pro_skills" class="tab tab_right">Tech Skills</a>
+    <section class="experience">
+      <div class="wrapper experience_wrapper">
+        <h2 class="experience_headline header-xl">Education</h2>
+        <div class="experience_item experience_item_top">
+          <div class="experience_column experience_column_one">
+            <div class="experience_date_outer">09/2022 - 07/2023</div>
+          </div>
+          <div class="experience_column experience_column_two">
+            <div class="experience_circle"></div>
+            <div class="experience_timeline"></div>
+          </div>
+          <div class="experience_column experience_column_three">
+            <h3 class="position">Master's - Text Mining</h3>
+            <h4 class="company">Vrije Universiteit Amsterdam - Amsterdam, Netherlands</h4>
+            <h5 class="experience_date_inner">09/2022 - 07/2023</h5>
+            <p class="education_subsection">Courses:</p>
+            <ul class="experience_description">
+              <li class="course">Programming in Python for Text Analysis</li>
+              <li class="course">Human Language Technology</li>
+              <li class="course">Language as Data</li>
+              <li class="course">Machine Learning for NLP</li>
+              <li class="course">Applied Text Mining 1: Methods</li>
+              <li class="course">Advanced NLP</li>
+              <li class="course last_list_item">Applied Text Mining 2: Domains</li>
             </ul>
-        
-            <div class="tabs_panels">
-                <section id="coding_skills" class="skills">
-                    <h2 class="visually_hidden">Coding Skills</h2>
-                    <div class="wrapper skills_wrapper">
-                        <div class="skills_item">
-                            <h3 class="skills_title">Python</h3>
-                            <div class="skills_container">
-                                <div class="skill_bar python"></div>
-                            </div>   
-                        </div>
-                        <div class="skills_item">
-                            <h3 class="skills_title">SQL</h3>
-                            <div class="skills_container">
-                                <div class="skill_bar sql"></div>
-                            </div>
-                        </div>
-                        <div class="skills_item">
-                            <h3 class="skills_title">HTML</h3>
-                            <div class="skills_container">
-                                <div class="skill_bar html"></div>
-                            </div>
-                        </div>
-                        <div class="skills_item">
-                            <h3 class="skills_title">CSS</h3>
-                            <div class="skills_container">
-                                <div class="skill_bar css"></div>
-                            </div>
-                        </div>
-                        <div class="skills_item">
-                            <h3 class="skills_title">Git</h3>
-                            <div class="skills_container">
-                                <div class="skill_bar git"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="pro_skills" class="pro_skills">
-                    <h2 class="visually_hidden">Professional Skills</h2>
-                    <div class="wrapper pro_skills_wrapper">
-                        <div class="pro_skills_item">
-                            <h3 class="pro_skills_title pro_skills_title_mobile">Web Scraping - 70%</h3>
-                            <div class="pro_skills_title_container title_container_web_scraping">
-                                <h3 class="pro_skills_title pro_skills_title_desktop">Web Scraping</h3>
-                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">70%</h3>
-                            </div>
-                            <div class="pro_skills_container web_scraping">
-                                <div class="skill_circle circle_0_1"></div>
-                                <div class="skill_circle circle_0_2"></div>
-                                <div class="skill_circle circle_0_3"></div>
-                                <div class="skill_circle circle_0_4"></div>
-                                <div class="skill_circle circle_0_5"></div>
-                                <div class="skill_circle circle_0_6"></div>
-                                <div class="skill_circle circle_0_7"></div>
-                                <div class="skill_circle circle_0_8"></div>
-                                <div class="skill_circle circle_0_9"></div>
-                                <div class="skill_circle circle_0_10"></div>
-                            </div>
-                        </div>
-        
-                        <div class="pro_skills_item">
-                            <h3 class="pro_skills_title pro_skills_title_mobile">Data Transformation - 70%</h3>
-                            <div class="pro_skills_title_container title_container_data_transformation">
-                                <h3 class="pro_skills_title pro_skills_title_desktop">Data Transformation</h3>
-                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">70%</h3>
-                            </div>
-                            <div class="pro_skills_container data_transformation">
-                                <div class="skill_circle circle_1_1"></div>
-                                <div class="skill_circle circle_1_2"></div>
-                                <div class="skill_circle circle_1_3"></div>
-                                <div class="skill_circle circle_1_4"></div>
-                                <div class="skill_circle circle_1_5"></div>
-                                <div class="skill_circle circle_1_6"></div>
-                                <div class="skill_circle circle_1_7"></div>
-                                <div class="skill_circle circle_1_8"></div>
-                                <div class="skill_circle circle_1_9"></div>
-                                <div class="skill_circle circle_1_10"></div>
-                            </div>
-                        </div>
-        
-                        <div class="pro_skills_item">
-                            <h3 class="pro_skills_title pro_skills_title_mobile">Database Management - 50%</h3>
-                            <div class="pro_skills_title_container title_container_db_management">
-                                <h3 class="pro_skills_title pro_skills_title_desktop">Database Management</h3>
-                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">50%</h3>
-                            </div>
-                            <div class="pro_skills_container db_management">
-                                <div class="skill_circle circle_2_1"></div>
-                                <div class="skill_circle circle_2_2"></div>
-                                <div class="skill_circle circle_2_3"></div>
-                                <div class="skill_circle circle_2_4"></div>
-                                <div class="skill_circle circle_2_5"></div>
-                                <div class="skill_circle circle_2_6"></div>
-                                <div class="skill_circle circle_2_7"></div>
-                                <div class="skill_circle circle_2_8"></div>
-                                <div class="skill_circle circle_2_9"></div>
-                                <div class="skill_circle circle_2_10"></div>
-                            </div>
-                        </div>
-
-                        <div class="pro_skills_item">
-                            <h3 class="pro_skills_title pro_skills_title_mobile">Data Modeling - 60%</h3>
-                            <div class="pro_skills_title_container title_container_data_modeling">
-                                <h3 class="pro_skills_title pro_skills_title_desktop">Data Modeling</h3>
-                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">60%</h3>
-                            </div>
-                            <div class="pro_skills_container data_modeling">
-                                <div class="skill_circle circle_3_1"></div>
-                                <div class="skill_circle circle_3_2"></div>
-                                <div class="skill_circle circle_3_3"></div>
-                                <div class="skill_circle circle_3_4"></div>
-                                <div class="skill_circle circle_3_5"></div>
-                                <div class="skill_circle circle_3_6"></div>
-                                <div class="skill_circle circle_3_7"></div>
-                                <div class="skill_circle circle_3_8"></div>
-                                <div class="skill_circle circle_3_9"></div>
-                                <div class="skill_circle circle_3_10"></div>
-                            </div>
-                        </div>
-
-                        <div class="pro_skills_item">
-                            <h3 class="pro_skills_title pro_skills_title_mobile">Data Pipelines - 50%</h3>
-                            <div class="pro_skills_title_container title_container_data_pipelines">
-                                <h3 class="pro_skills_title pro_skills_title_desktop">Data Pipelines</h3>
-                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">50%</h3>
-                            </div>
-                            <div class="pro_skills_container data_pipelines">
-                                <div class="skill_circle circle_4_1"></div>
-                                <div class="skill_circle circle_4_2"></div>
-                                <div class="skill_circle circle_4_3"></div>
-                                <div class="skill_circle circle_4_4"></div>
-                                <div class="skill_circle circle_4_5"></div>
-                                <div class="skill_circle circle_4_6"></div>
-                                <div class="skill_circle circle_4_7"></div>
-                                <div class="skill_circle circle_4_8"></div>
-                                <div class="skill_circle circle_4_9"></div>
-                                <div class="skill_circle circle_4_10"></div>
-                            </div>
-                        </div>
-
-                        <div class="pro_skills_item">
-                            <h3 class="pro_skills_title pro_skills_title_mobile">Text Mining and NLP - 80%</h3>
-                            <div class="pro_skills_title_container title_container_nlp">
-                                <h3 class="pro_skills_title pro_skills_title_desktop">Text Mining and NLP</h3>
-                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">80%</h3>
-                            </div>
-                            <div class="pro_skills_container nlp">
-                                <div class="skill_circle circle_5_1"></div>
-                                <div class="skill_circle circle_5_2"></div>
-                                <div class="skill_circle circle_5_3"></div>
-                                <div class="skill_circle circle_5_4"></div>
-                                <div class="skill_circle circle_5_5"></div>
-                                <div class="skill_circle circle_5_6"></div>
-                                <div class="skill_circle circle_5_7"></div>
-                                <div class="skill_circle circle_5_8"></div>
-                                <div class="skill_circle circle_5_9"></div>
-                                <div class="skill_circle circle_5_10"></div>
-                            </div>
-                        </div>
-
-                        <div class="pro_skills_item">
-                            <h3 class="pro_skills_title pro_skills_title_mobile">Front-End Development - 30%</h3>
-                            <div class="pro_skills_title_container title_container_frontend">
-                                <h3 class="pro_skills_title pro_skills_title_desktop">Front-End Development</h3>
-                                <h3 class="pro_skills_percentage pro_skills_percentage_desktop">30%</h3>
-                            </div>
-                            <div class="pro_skills_container frontend">
-                                <div class="skill_circle circle_6_1"></div>
-                                <div class="skill_circle circle_6_2"></div>
-                                <div class="skill_circle circle_6_3"></div>
-                                <div class="skill_circle circle_6_4"></div>
-                                <div class="skill_circle circle_6_5"></div>
-                                <div class="skill_circle circle_6_6"></div>
-                                <div class="skill_circle circle_6_7"></div>
-                                <div class="skill_circle circle_6_8"></div>
-                                <div class="skill_circle circle_6_9"></div>
-                                <div class="skill_circle circle_6_10"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+            <p class="education_subsection thesis">Thesis: Machine Translation Evaluation: Comparing Traditional and
+              Neural Machine Translation Evaluation Metrics for English→Russian</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <section class="experience">
-            <div class="wrapper experience_wrapper">
-                <h2 class="experience_headline header-xl">Experience</h2>
-                <div class="experience_item experience_item_top">
-                    <div class="experience_column experience_column_one">
-                        <div class="experience_date_outer">07/2024 - current</div>
-                    </div>
-                    <div class="experience_column experience_column_two">
-                        <div class="experience_circle"></div>
-                        <div class="experience_timeline"></div>
-                    </div>
-                    <div class="experience_column experience_column_three">
-                        <h3 class="position">Junior Data Engineer</h3>
-                        <h4 class="company">Cefetra Group - Rotterdam, Netherlands</h4>
-                        <h5 class="experience_date_inner">07/2024 - current</h5>
-                        <ul class="experience_description"></ul>
-                    </div>
-                </div>
-                <div class="experience_item experience_item_bottom">
-                    <div class="experience_column experience_column_one">
-                        <div class="experience_date_outer">12/2023 - 07/2024</div>
-                    </div>
-                    <div class="experience_column experience_column_two">
-                        <div class="experience_circle"></div>
-                        <div class="experience_timeline"></div>
-                    </div>
-                    <div class="experience_column experience_column_three">
-                        <h3 class="position">Assistant Data Engineer</h3>
-                        <h4 class="company">Cefetra Group - Rotterdam, Netherlands</h4>
-                        <h5 class="experience_date_inner">12/2023 - 07/2024</h5>
-                        <ul class="experience_description">
-                            <li>Made significant contributions to the end-to-end development of two high-impact data projects, driving revenue growth for Cefetra Group through paid customer subscriptions.</li>
-                            <li>Developed a neural language model with TensorFlow to extract relevant data from Reuters articles, achieving an accuracy rate of 96%.</li>
-                            <li>Built and maintained ETL data pipelines to ensure automated collection, processing, and storage of data. Monitored and troubleshot pipeline issues to establish a smooth and reliable data flow.</li>
-                            <li>Created and managed data models to represent the structure of collected data in relational databases using PostgreSQL.</li>
-                            <li class="last_list_item">Contributed to creating and maintaining comprehensive documentation for data engineering processes and workflows.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="experience">
-            <div class="wrapper experience_wrapper">
-                <h2 class="experience_headline header-xl">Education</h2>
-                <div class="experience_item experience_item_top">
-                    <div class="experience_column experience_column_one">
-                        <div class="experience_date_outer">09/2022 - 07/2023</div>
-                    </div>
-                    <div class="experience_column experience_column_two">
-                        <div class="experience_circle"></div>
-                        <div class="experience_timeline"></div>
-                    </div>
-                    <div class="experience_column experience_column_three">
-                        <h3 class="position">Master's - Text Mining</h3>
-                        <h4 class="company">Vrije Universiteit Amsterdam - Amsterdam, Netherlands</h4>
-                        <h5 class="experience_date_inner">09/2022 - 07/2023</h5>
-                        <p class="education_subsection">Courses:</p>
-                        <ul class="experience_description">
-                            <li class="course">Programming in Python for Text Analysis</li>
-                            <li class="course">Human Language Technology</li>
-                            <li class="course">Language as Data</li>
-                            <li class="course">Machine Learning for NLP</li>
-                            <li class="course">Applied Text Mining 1: Methods</li>
-                            <li class="course">Advanced NLP</li>
-                            <li class="course last_list_item">Applied Text Mining 2: Domains</li>
-                        </ul>
-                        <p class="education_subsection thesis">Thesis: Machine Translation Evaluation: Comparing Traditional and Neural Machine Translation Evaluation Metrics for English→Russian</p>
-                        <!-- <ul class="experience_description">
-                            <li class="course last_list_item">Machine Translation Evaluation: Comparing Traditional and Neural Machine Translation Evaluation Metrics for English→Russian</li>
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="wrapper contact_wrapper">
-                <div class="contact_text">
-                    <h2 class="contact_headline header-xl">Contact</h2>
-                    <p class="contact_description">
-                        If you would like to contact me, please fill in the form, 
-                        and I'll get back to you as soon as possible.
-                    </p>
-                </div>
-                <form action="https://formsubmit.co/7d47df6edf147d8f4a551464980fc26e" method="POST" class="contact_form"> <!-- action will be post -->
-                    <input type="hidden" name="_subject" value="New Client!">
-                    <div class="contact_control">
-                        <label for="name" class="visually_hidden">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <img src="assets/icon-invalid.svg" alt="" class="contact_invalid-icon" width="24" height="24">
-                        <p class="contact_invalid_message">Sorry, invalid format here</p>
-                    </div>
-                    <div class="contact_control">
-                        <label for="email" class="visually_hidden">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <img src="assets/icon-invalid.svg" alt="" class="contact_invalid-icon" width="24" height="24">
-                        <p class="contact_invalid_message">Sorry, invalid format here</p>
-                    </div>
-                    <div class="contact_control">
-                        <label for="message" class="visually_hidden">Message</label>
-                        <textarea name="message" id="message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="contact_control align-right">
-                        <button type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <h2 class="visually_hidden">Footer</h2>
-        <div class="wrapper footer_wrapper">
-            <nav class="header_nav">
-                <h2 class="visually_hidden">Navigation</h2>
-                <!-- link to home page -->
-                <a href="/" class="header_home">
-                    natalia_khaidanova
-                    <span class="visually_hidden">(to home page)</span>
-                </a> 
-                <!-- GitHub -->
-                <a href="https://github.com/NataliaKhaidanova" target="_blank" class="header_social">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="25" 
-                        height="24" 
-                        aria-labelledby="socialGitHub" 
-                        role="img"
-                    >
-                        <title id="socialGitHub">GitHub</title>
-                        <path 
-                            fill="#FFF"
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                        />
-                    </svg>
-                </a>
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/natalia-khaidanova-267381282/" target="_blank" class="header_social">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="25" 
-                        height="24" 
-                        aria-labelledby="socialLinkedIn" 
-                        role="img"
-                    >
-                        <title id="socialLinkedIn">LinkedIn</title>
-                        <path 
-                            fill="#FFF"
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                        />
-                    </svg>
-                </a>
-            </nav>
-            <p class="developed_by">Developed by <br> Natalia Khaidanova</p>
+    <section id="contact" class="contact">
+      <div class="wrapper contact_wrapper">
+        <div class="contact_text">
+          <h2 class="contact_headline header-xl">Contact</h2>
+          <p class="contact_description">
+            If you would like to contact me, please fill in the form,
+            and I'll get back to you as soon as possible.
+          </p>
         </div>
+        <form action="https://formsubmit.co/7d47df6edf147d8f4a551464980fc26e" method="POST" class="contact_form">
+          <input type="hidden" name="_subject" value="New Client!">
+          <div class="contact_control">
+            <label for="name" class="visually_hidden">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <img src="assets/icon-invalid.svg" alt="" class="contact_invalid-icon" width="24" height="24">
+            <p class="contact_invalid_message">Sorry, invalid format here</p>
+          </div>
+          <div class="contact_control">
+            <label for="email" class="visually_hidden">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <img src="assets/icon-invalid.svg" alt="" class="contact_invalid-icon" width="24" height="24">
+            <p class="contact_invalid_message">Sorry, invalid format here</p>
+          </div>
+          <div class="contact_control">
+            <label for="message" class="visually_hidden">Message</label>
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+          </div>
+          <div class="contact_control align-right">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    </footer>
+  <footer class="footer">
+    <h2 class="visually_hidden">Footer</h2>
+    <div class="wrapper footer_wrapper">
+      <nav class="header_nav">
+        <h2 class="visually_hidden">Navigation</h2>
+        <a href="/" class="header_home">
+          natalia_khaidanova
+          <span class="visually_hidden">(to home page)</span>
+        </a>
+        <a href="https://github.com/NataliaKhaidanova" target="_blank" class="header_social">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" aria-labelledby="socialGitHub" role="img">
+            <title id="socialGitHub">GitHub</title>
+            <path fill="#FFF"
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/natalia-khaidanova-267381282/" target="_blank" class="header_social">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" aria-labelledby="socialLinkedIn" role="img">
+            <title id="socialLinkedIn">LinkedIn</title>
+            <path fill="#FFF"
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+      </nav>
+      <p class="developed_by">Developed by <br> Natalia Khaidanova</p>
+    </div>
+  </footer>
 
-    <!-- Here will go some more text about myself. -->
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
