@@ -284,7 +284,7 @@ h1>span {
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 20px;
-  padding-bottom: 85px;
+  padding-bottom: 63px;
 }
 
 .skills_item {
@@ -533,7 +533,7 @@ h1>span {
 
 /* EXPERIENCE */
 .experience {
-  margin-bottom: 85px;
+  margin-bottom: 63px;
 }
 
 .experience_headline {
